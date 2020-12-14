@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-mode">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
     <title>Instagram</title>
 </head>
 <body>
@@ -15,18 +17,25 @@
             <div class="group">
                 <img src="/img/instagram-logo.png" class="instagram-logo" alt="Instagram Logo">
                 <div class="profile-photo">
-                    <img src="/img/perfil-instagram.jpg" alt="Foto do Perfil">
+                    <img src="/img/perfil-instagram.png" alt="Foto do Perfil">
                 </div>
-                <a href="#" class="instagram-login">Continue como sprucegabriela</a>
+                <a href="#" class="instagram-login">Continue como victor_flsilva</a>
                 <a href="#" class="instagram-logout">Remover conta</a>
+                
             </div>
             <div class="group">
-                <p class="not-account">Não é sprucegabriela?</p>
-                <p class="notaccount">
+                <p class="not-account">Não é victor_flsilva?</p>
+                <p class="not-account" id="adjustment">
                     <span class="link-blue">Alternar Contas</span>
                     ou
-                    <span class="link-blue">Escreva-se</span>
+                    <span class="link-blue">Inscreva-se</span>
                 </p>
+
+                <div class="switch__container">
+                    <input id="switch-shadow" class="switch switch--shadow night-mode" type="checkbox" />
+                    <label for="switch-shadow"></label>
+                </div>
+
             </div>
             <div class="get-the-app">
                 <p class="get-app">Baixe o aplicativo</p>
@@ -35,8 +44,9 @@
                     <a href="/img/googleplay-button.png" class="app-download"></a>
                 </div>
             </div>
-            
         </div>
     </div>
+
+    <script src="/javascript.js"></script>
 </body>
 </html>

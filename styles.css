@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: sans-serif;
     font-size: 14px;
+    
 }
 body {
     width: 100%;
@@ -63,4 +64,135 @@ body {
 }
 .profile-photo img {
     height: 6rem;
+    border-radius: 3rem;
+}
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.not-account {
+    color: rgb(160, 160, 160);
+}
+#adjustment {
+    margin-bottom: 10px;
+}
+.link-blue{
+    color: #0095f6;
+}
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.get-app{
+    color: #0095f6;
+}
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-download:nth-child(1) {
+    background-image: url(/img/apple-button.png);
+}
+.app-download:nth-child(2) {
+    background-image: url(/img/googleplay-button.png);
+}
+
+/* media query */
+@media(max-width: 1024px){
+    body {
+        background-color:#ffffff;
+    }
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+@media(max-width:650px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-continue{
+        width: 100%;
+    }
+    .group{
+        border-radius: 1px solid ;
+    }
+}
+
+/* Botão Switch*/
+.switch {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+.switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+.switch--shadow + label {
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 60px;
+}
+.switch--shadow + label:before,
+.switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: '';
+  background-image: url(/img/moon-solid.svg);
+}
+.switch--shadow + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  transition: all 0.4s;
+  background-image:none;
+}
+.switch--shadow + label:after {
+  width: 32px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+.switch--shadow:checked + label:before {
+    background-color: #14195f;
+  }
+  .switch--shadow:checked + label:after {
+    transform: translateX(30px);
+}
+
+/*Night - Mode*/
+.night-mode{
+    background-color: black;
 }
